@@ -7,8 +7,8 @@ Not a lot has changed in this theme compare to Bootstrap base theme. This theme 
 It is built primarily for blogging/journal sites. You can use any Bootswatch (https://bootswatch.com/) skins with this theme. It may also make a good addition to business sites that blogs quite frequently.
 
 ##Requirements:
-Drupal 8: https://www.drupal.org/project/drupal
-Bootstrap base theme: https://www.drupal.org/project/bootstrap
+- Drupal 8: https://www.drupal.org/project/drupal
+- Bootstrap base theme: https://www.drupal.org/project/bootstrap
 
 ##Installation
 - Download base theme: https://www.drupal.org/project/bootstrap (Drupal 8 version, ie 8.x not 7.x)
