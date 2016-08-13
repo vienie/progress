@@ -1,0 +1,16 @@
+global-styling:
+  css:
+    theme:
+      assets/font-awesome-4.6.3/css/font-awesome.min.css: {}
+      assets/css/style.css: {}
+     
+  js:
+    assets/js/headroom.min.js: {}
+    assets/js/jQuery.headroom.min.js: {}
+    assets/js/custom.js: {}  
+      
+js-head: 
+  version: VERSION
+  header: true   
+  js: 
+    /themes/progress/assets/js/respond.min.js: { type: external, browsers: { IE: 'lt IE 9', '!IE': false } }
