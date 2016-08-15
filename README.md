@@ -24,6 +24,11 @@ To get the full screen search to work, follow these steps:
 - Go to menu --> structure --> Menus --> click on 'edit menu' for Main navigation.
 - Create a new menu item. In the title field type in: Search and in the link field type in: #block-progress-search
 
+Theme settings:
+- Menu --> Appearances --> click on progress settings link
+- Click on General tab. Under Container, check Fluid container
+- Click on Components. Under Navbar, select Fxied top
+
 To change Bootswatch skins:
 - Menu --> Appearances --> click on progress settings link.
 - In the settings page, click on 'Advanced' tab. Under 'Theme' dropdown, select a Bootswatch skin you want and click on 'save configuration' button.
