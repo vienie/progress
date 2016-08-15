@@ -27,7 +27,7 @@ To get the full screen search to work, follow these steps:
 Theme settings:
 - Menu --> Appearances --> click on progress settings link
 - Click on General tab. Under Container, check Fluid container
-- Click on Components. Under Navbar, select Fxied top
+- Click on Components. Under Navbar, select Fixed top
 
 To change Bootswatch skins:
 - Menu --> Appearances --> click on progress settings link.
