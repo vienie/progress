@@ -6,3 +6,20 @@
  * Place your custom PHP code in this file.
  */
 
+function progress_preprocess_links(&$variables) {
+    if (isset($variables['links']['node-readmore'])) {
+      $variables['links']['node-readmore']['link']['#title'] = t('Read more...');
+    }
+}
+
+// Use .png for logo instead of default .svg format
+function progress_preprocess_block(&$variables) {
+  switch ($variables['base_plugin_id']) {
+    case 'system_branding_block':
+      $variables['site_logo'] = '';
+      if ($variables['content']['site_logo']['#access'] && $variables['content']['site_logo']['#uri']) {
+        $variables['site_logo'] = str_replace('.svg', '.png', $variables['content']['site_logo']['#uri']);
+      }
+    break;
+  }
+}
