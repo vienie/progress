@@ -30,19 +30,22 @@ $(function () {
 });
 
 // Smooth scrolling
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
+$(document).ready(function () {
+    $('a').on('click', function (e) {
+        // e.preventDefault();
+
+        var target = this.hash,
+            $target = $(target);
+
+       $('html, body').stop().animate({
+        'scrollTop': $target.offset().top-140
+    }, 600, 'swing', function () {
+    });
+
+        console.log(window.location);
+
         return false;
-      }
-    }
-  });
+    });
 });
 
 })(jQuery);
