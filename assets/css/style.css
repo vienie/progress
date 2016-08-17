@@ -3,9 +3,7 @@
 html {
     font-family: sans-serif;
 }
-body, html {
-    overflow-x: hidden;
-}
+
 body {
 	margin: 0;
     -moz-osx-font-smoothing: grayscale;
