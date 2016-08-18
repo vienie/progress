@@ -59,7 +59,15 @@ p {
 .headroom { -webkit-transition: all 0.4s ease-out; -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; transition: all 0.4s ease-out; }
 
 /* menu */
-.navbar-default {padding:5px 0}
+@media only screen and (min-width: 768px) {
+  .navbar-header {margin-top:5px}
+  .navbar-nav > li > a {padding-top: 20px;padding-bottom: 20px;}
+}
+
+@media only screen and (max-width : 767px) {
+  .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {margin-left:0}
+}
+
 .navbar-nav > li > a {
   color: rgba(0, 0, 0, 0.44);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
@@ -70,10 +78,13 @@ p {
 }
 /* content  */
 body.path-node .main-container {margin-top:20px}
+.empty-sidebar {padding-left:0;padding-right:0}
 .field--name-body {margin:20px 0}
 
 .content ol li, .content ul li {margin-bottom:5px}
-		
+
+h3.comment-add-title {font-size:24px}
+	
 /* submitted by */
 .author {
   color: rgba(0, 0, 0, 0.44);
@@ -168,13 +179,20 @@ body.path-node .main-container {margin-top:20px}
 	border-radius: 3px;
 }
 
+/* sidebar */
+.region-sidebar-second h2.block-title {font-size:24px;margin-top: 0;}
+.region-sidebar-second .block-inner, .region-sidebar-second .block-inner p {font-size:16px;word-wrap: break-word;}
+.region-sidebar-second .block {margin-bottom:40px}
+
+
 /* bootstrap overrides */
 .breadcrumb {font-size:14px;margin-top:10px;background:none}
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {margin-left:-10px}
-.page-header {border-bottom:none;padding:0}
+.page-header {border-bottom:none;padding:0;margin-bottom:0}
 img {max-width:100%;height:auto}
 blockquote p {color: rgba(0, 0, 0, 0.7);font-size:20px}
 .list-inline {text-align:right;font-size:13px;}
 .btn {margin-right:10px}
 .filter-help, .search-help-link {font-size:13px}
 .footer {font-size:13px}
+
