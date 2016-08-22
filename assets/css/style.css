@@ -76,6 +76,20 @@ p {
   font-weight: 400;
   letter-spacing: 0;
 }
+
+/* Make menu open on hover, not toggle */
+.dropdown:hover .dropdown-menu {display: block;}
+
+@media only screen and (max-width : 767px) {
+  #navbar.navbar.slideUp {top:0}
+  .navbar-nav {margin:0}
+  .nav > li > a {padding:5px}
+  .navbar-nav > li > .dropdown-menu {display:block}
+  .pull-right {float:left !important;width: 100%;}
+  .dropdown-menu {position:static;border:none;background:none;box-shadow:unset}
+}	
+	
+	
 /* content  */
 body.path-node .main-container {margin-top:20px}
 .empty-sidebar {padding-left:0;padding-right:0}
@@ -84,6 +98,8 @@ body.path-node .main-container {margin-top:20px}
 .content ol li, .content ul li {margin-bottom:5px}
 
 h3.comment-add-title {font-size:24px}
+
+.highlighted {margin-top:20px}
 	
 /* submitted by */
 .author {
@@ -194,5 +210,18 @@ blockquote p {color: rgba(0, 0, 0, 0.7);font-size:20px}
 .list-inline {text-align:right;font-size:13px;}
 .btn {margin-right:10px}
 .filter-help, .search-help-link {font-size:13px}
+.form-control {height:auto}
 .footer {font-size:13px}
 
+
+/* Smaller font for mobile devices */
+@media only screen and (max-width : 480px) {
+  h1 {font-size:28px}
+  h2 {font-size:24px}
+  h3 {font-size:20px}
+  h4, h5, h6 {font-size:16px}
+  .main-container, p {font-size:16px}
+  .tabs ul li a {font-size:14px}
+  .author, .list-inline, .feed-icons {font-size:11px}
+  .footer {font-size:12px}
+}
